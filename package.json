@@ -28,7 +28,7 @@
     "build-db-client": "prisma generate",
     "set-routes-manifest": "node scripts/set-routes-manifest.js",
     "update-tracker": "node scripts/update-tracker.js",
-    "update-db": "echo \"skip prisma migrate on vercel\"",
+    "update-db": "prisma migrate deploy",
     "check-db": "node scripts/check-db.js",
     "check-env": "node scripts/check-env.js",
     "copy-db-files": "node scripts/copy-db-files.js",
